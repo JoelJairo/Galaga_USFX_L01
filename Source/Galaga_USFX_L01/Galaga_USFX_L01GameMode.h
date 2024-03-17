@@ -9,6 +9,7 @@
 class ANaveEnemiga;
 class ANaveEnemigaTransporte;
 class ANaveEnemigaCaza;
+class ANaveEnemigaCazaAlfa;
 
 UCLASS(MinimalAPI)
 class AGalaga_USFX_L01GameMode : public AGameModeBase
@@ -22,6 +23,7 @@ public:
 	//ANaveEnemiga* NaveEnemiga01;
 	ANaveEnemigaTransporte* NaveEnemigaTransporte01;
 	ANaveEnemigaCaza* NaveEnemigaCaza01;
+	ANaveEnemigaCazaAlfa* NaveEnemigaCazaAlfa01;
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -30,6 +32,8 @@ public:
 	TArray<ANaveEnemiga*> TANavesEnemigas;
 	TArray<ANaveEnemigaCaza*> TANavesEnemigasCaza;
 	TArray<ANaveEnemigaTransporte*> TANavesEnemigasTransporte;
+	TArray<ANaveEnemigaCazaAlfa*> TANavesEnemigasCazaAlfa;
+
 
 private:
 	int TiempoTranscurrido;

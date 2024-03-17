@@ -31,6 +31,18 @@ void ANaveEnemigaTransporte::Disparar()
 {
 }
 
+void ANaveEnemigaTransporte::Destruirse()
+{
+}
+
+void ANaveEnemigaTransporte::Escapar()
+{
+}
+
+void ANaveEnemigaTransporte::Atacar()
+{
+}
+
 void ANaveEnemigaTransporte::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);

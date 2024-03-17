@@ -32,6 +32,18 @@ void ANaveEnemigaCaza::Disparar()
 {
 }
 
+void ANaveEnemigaCaza::Destruirse()
+{
+}
+
+void ANaveEnemigaCaza::Escapar()
+{
+}
+
+void ANaveEnemigaCaza::Atacar()
+{
+}
+
 void ANaveEnemigaCaza::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
