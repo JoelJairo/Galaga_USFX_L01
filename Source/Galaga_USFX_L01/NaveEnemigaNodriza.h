@@ -22,9 +22,13 @@ public:
 	FORCEINLINE void SetCantidadEscudos(int _cantidadEscudos) { cantidadEscudos = _cantidadEscudos; }
 
 protected:
-	virtual void Mover();
+	virtual void Mover(float DeltaTime);
 	virtual void Disparar();
 	virtual void Destruirse();
 	virtual void Escapar();
 	virtual void Atacar();
+
+public:
+	// Called every frame
+	virtual void Tick(float DeltaTime) override;
 };

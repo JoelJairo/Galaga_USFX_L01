@@ -17,9 +17,10 @@ private:
     bool TienePropulsoresMejorados;
 
 public:
+    ANaveEnemigaCazaAlfa();
     // Getter para TienePropulsoresMejorados
-    bool GetTienePropulsoresMejorados() const { return TienePropulsoresMejorados; }
+    FORCEINLINE bool GetTienePropulsoresMejorados() const { return TienePropulsoresMejorados; }
 
     // Setter para TienePropulsoresMejorados
-    void SetTienePropulsoresMejorados(bool NuevoValor) { TienePropulsoresMejorados = NuevoValor; }
+    FORCEINLINE void SetTienePropulsoresMejorados(bool _TienePropulsoresMejorados) { TienePropulsoresMejorados = _TienePropulsoresMejorados; }
 };
